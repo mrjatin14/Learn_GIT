@@ -1,0 +1,25 @@
+public class SeleniumTest {
+   
+    p.s.v.m.
+
+WebDriver.chromedriver.setup();
+WebDriver driver = new ChromeDriver();
+
+driver.manage.window.maximize();
+driver.get("www.curahealth....");
+driver.findElement(ById("btn-make-appointment")).click();
+driver.findElement(Byname("username")).sendkeys("John Doe");
+driver.findElement(ById("txt-password")).sendkeys("ThisIsNotAPassword");
+driver.findElement(ById("btn-login")).click();
+Select dropdown = new  select(driver.findElement(ById("combo_facility"));
+dropdown.selectByIndex(1);
+driver.findElement(ById("chk_hospotal_readmission")).click();
+driver.findElement(ById("radio_program_none")).click();
+driver.findElement(ById("txt_visit_date")).sendkeys("14/11/1999");
+driver.findElement(ById("txt_comment")).sendkeys("hii i checkup my pet thanks for the service...!");
+driver.findElement(ById("btn-book-appointment")).click();
+driver.findElement(ByLinkedText("btn-book-appointment")).click();
+driver.close();
+
+
+}
